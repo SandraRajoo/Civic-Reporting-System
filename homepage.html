@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+	<head>
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+			<!-- jQuery library -->	
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+			<!-- Latest compiled JavaScript -->	
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+			<link rel="stylesheet" href="css/style.css">
+
+			<title>beautifymycity</title>
+
+			<script>
+
+			$(document).ready(function()
+			{
+				$("#main").show();
+				$("#reg").hide();
+				$("#log").hide();
+				$("#ad").hide();
+			$("#signup").click(function()
+				{
+					$("#main").hide();
+			$("#log").hide();
+			$("#ad").hide();
+				$("#reg").show();
+				});
+				$("#login").click(function()
+				{
+					$("#main").hide();
+					$("#reg").hide();
+					$("#ad").hide();
+					$("#log").show();
+				});
+				$("#admin").click(function(){
+					$("#main").hide();
+					$("#log").hide();
+					$("#reg").hide();
+					$("#ad").show();
+
+				});
+
+
+			}
+				);
+
+			</script>
+
+			<nav class="navbar-inverse" style="background-color:#1f1f14;">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="homepage.html" style="color:white;"><b><span style="color:#ef0739;font-family:Courier New;">beautify<span style="color:white;">Mycity</span></b></a>
+					</div>
+						<ul class="nav navbar-nav navbar-right">
+      						<li><a id="signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      						<li><a id="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      						<li><a id="admin"><span class="glyphicon glyphicon-bell"></span> Admin</a></li>
+   						 </ul>
+
+					
+				</div>
+			</nav>	
+			
+	</head>
+
+	<body>
+			<div class="container-fluid" id="cover">
+				<div class="row">
+						<div class="col-md-12">
+						</div>
+						<div id="main">
+						<h1 style="color:white; margin-left:400px;font-family:Courier New;padding-top:120px;"><b>Make your city better</b></h1>
+						<form action="mainpage.php" enctype="multipart/form-data">
+						<br><br><br><input type="submit" class="btn btn-danger" value="Get Started" style="margin-left:600px;padding-bottom:10px;"><b></b></button></form>
+						<!-- <br><h3 style="color:white;font-family:Courier New;margin-left:100px;padding-top:150px;"><strong> Improve your city and quality of life</h3></strong>-->
+						</div>
+
+						<div id="reg">
+						<h1 style="color:white; margin-left:540px;font-family:Courier New;padding-top:120px;"><b>Sign Up!</b></h1>
+						<br><br>
+						<form action="register.php" method="post" enctype="multipart/form-data">
+						<input type="text" class="form-control" name="name" placeholder="Username" autocomplete="off" style="width:200px; margin-left:530px;" required>
+						<br><br><input type="password" class="form-control" name="password" placeholder="Password" style="width:200px;margin-left:530px;" required>
+
+						<br><br><input type="text" class="form-control" name="email" placeholder="Email" style="width:200px;margin-left:530px;" required>
+						<br><br><input type="submit" class="btn btn-danger" style="margin-left:590px;">
+						</input></form>
+						</div>
+
+						
+
+						<div id="log">
+						<h1 style="color:white; margin-left:540px;font-family:Courier New;padding-top:120px;"><b>Sign In!</b></h1>
+						<br><br>
+						<form action="login.php" method="post" enctype="multipart/form-data">
+						<input type="text" class="form-control" name="email" placeholder="Email Id" style="width:200px; margin-left:530px;" required>
+						<br><br><input type="password" name="password" class="form-control" placeholder="Password" style="width:200px;margin-left:530px;" required>
+						<br><br><input type="submit" class="btn btn-danger" style="margin-left:590px;">
+						</input></form>
+						</div>
+
+						<div id="ad">
+						<h1 style="color:white; margin-left:540px;font-family:Courier New;padding-top:120px;"><b>Admin Login</b></h1>
+						<br><br>
+						<form action="admin.php" method="post" enctype="multipart/form-data">
+						<input type="text" class="form-control" name="name" placeholder="Username" style="width:200px; margin-left:530px;" required>
+						<br><br><input type="password" name="password" class="form-control" placeholder="Password" style="width:200px;margin-left:530px;" required>
+						<br><br><input type="submit" class="btn btn-danger" style="margin-left:590px;">
+						</input></form>
+						</div>
+
+
+
+			</div>
+	</body>
+
+	<footer>
+	</footer>
+	</html>
+
+	
+
